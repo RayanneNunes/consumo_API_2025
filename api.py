@@ -71,7 +71,7 @@ class API_Ice_and_Fire(API_consumer):
         # Atividade 5, que resultará o quarto commit
         URL = self.URL + str(id)
         try:
-            dado = requests.get(API).json()
+            dado = requests.get(URL).json()
             return((dado.get('name'), dado.get('tvSeries')))
         except:
             pass
